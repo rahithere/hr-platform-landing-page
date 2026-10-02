@@ -1,4 +1,4 @@
-import { Geist, inter } from "next/font/google";
+import { Geist, Inter } from "next/font/google";
 import "./globals.css";
 
 const geist = Geist({
