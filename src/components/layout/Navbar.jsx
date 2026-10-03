@@ -1,4 +1,4 @@
-import Button from "../ui/Button.jsx";
+import CtaButton from "../ui/ctaButton";
 
 export default function Navbar() {
     return (
@@ -46,13 +46,13 @@ export default function Navbar() {
 
                 {/* cta */}
                 <div className="flex items-center gap-2">
-                    <Button variant="secondary" size="sm" href="#signin">
+                    <CtaButton variant="secondary" size="sm" href="#signin">
                         Sign in
-                    </Button>
+                    </CtaButton>
 
-                    <Button variant="primary" size="sm" href="#demo">
+                    <CtaButton variant="primary" size="sm" href="#demo">
                         Request a Demo
-                    </Button>
+                    </CtaButton>
                 </div>
             </nav>
         </header>

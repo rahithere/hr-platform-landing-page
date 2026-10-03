@@ -1,5 +1,4 @@
-import Button from "../ui/Button";
-import CircularOrbit from "../ui/CircularOribit.jsx";
+import CtaButton from "../ui/ctaButton.jsx";
 
 export default function CoreSolutions() {
     return (
@@ -53,14 +52,14 @@ export default function CoreSolutions() {
                         </p>
 
                         {/* CTA */}
-                        <Button
+                        <CtaButton
                             variant="purple"
                             size="md"
                             href="#"
                             className="mt-6"
                         >
                             Learn More
-                        </Button>
+                        </CtaButton>
 
                     </div>
                 </div>

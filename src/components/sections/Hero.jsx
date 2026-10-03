@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "../ui/Button.jsx";
+import CtaButton from "../ui/ctaButton";
 
 export default function Hero() {
     return (
@@ -238,14 +238,14 @@ export default function Hero() {
                         designed to perfectly fit your business needs.
                     </p>
 
-                    <Button
+                    <CtaButton
                         variant="hero"
                         size="md"
                         href="#"
                         className="mt-6"
                     >
                         Request a Demo
-                    </Button>
+                    </CtaButton>
                 </div>
             </div>
         </section>
