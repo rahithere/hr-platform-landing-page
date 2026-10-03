@@ -83,48 +83,62 @@ export default function BuiltForEveryone() {
 
                 {/* Bento */}
 
-                {/* //todo: this grid item need to animated X static image */}
-                <BentoGrid className="mt-12">
-                    <BentoGridItem
-                        title="For HR professionals"
-                        description="Everything HR teams need to manage people."
-                        header={
-                            <div className="relative h-44 w-full overflow-hidden">
-                                <Image
-                                    src="/bento/attendance-report.png"
-                                    alt="Attendance report"
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
-                        }
-                    />
+                <motion.div
+                    initial={{ opacity: 0, y: 80 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{
+                        duration: 0.9,
+                        ease: [0.22, 1, 0.36, 1],
+                    }}
+                >
 
-                    <BentoGridItem
-                        title="For managers & leaders"
-                        description="Get the information you need to lead your team."
-                        header={<InsightsVisual />}
-                    />
+                    <BentoGrid
 
-                    <BentoGridItem
-                        title="For legal teams"
-                        description="Keep compliance and employee information organized."
-                        header={<LegalTeamsVisual />}
-                    />
+                        className="mt-12">
 
-                    <BentoGridItem
-                        title="All employee data at once"
-                        description="Everything about your employees in one place."
-                        className="md:col-span-2"
-                        header={<EmployeeDataVisual />}
-                    />
+                        {/* //todo: this grid item need to animated X static image */}
+                        <BentoGridItem
+                            title="For HR professionals"
+                            description="Everything HR teams need to manage people."
+                            header={
+                                <div className="relative h-44 w-full overflow-hidden">
+                                    <Image
+                                        src="/bento/attendance-report.png"
+                                        alt="Attendance report"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                            }
+                        />
 
-                    <BentoGridItem
-                        title="For teams & employees"
-                        description="Keep everyone aligned and informed."
-                        header={<TeamsVisual />}
-                    />
-                </BentoGrid>
+                        <BentoGridItem
+                            title="For managers & leaders"
+                            description="Get the information you need to lead your team."
+                            header={<InsightsVisual />}
+                        />
+
+                        <BentoGridItem
+                            title="For legal teams"
+                            description="Keep compliance and employee information organized."
+                            header={<LegalTeamsVisual />}
+                        />
+
+                        <BentoGridItem
+                            title="All employee data at once"
+                            description="Everything about your employees in one place."
+                            className="md:col-span-2"
+                            header={<EmployeeDataVisual />}
+                        />
+
+                        <BentoGridItem
+                            title="For teams & employees"
+                            description="Keep everyone aligned and informed."
+                            header={<TeamsVisual />}
+                        />
+                    </BentoGrid>
+                </motion.div>
             </div>
         </motion.section>
     );

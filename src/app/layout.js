@@ -1,5 +1,6 @@
 import { Geist, Inter } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "@/components/SmoothScroll.jsx";
 
 const geist = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +23,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geist.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <SmoothScroll />
+        {children}
+      </body>
     </html>
   );
 }
