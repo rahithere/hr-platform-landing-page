@@ -1,7 +1,7 @@
-import Navbar from "./component/layout/Navbar";
-import BuiltForEveryone from "./component/sections/BuiltForEveryone";
-import CoreSolutions from "./component/sections/CoreSolutions";
-import Hero from "./component/sections/Hero";
+import Navbar from "@/components/layout/Navbar.jsx";
+import BuiltForEveryone from "@/components/sections/BuiltForEveryone";
+import CoreSolutions from "@/components/sections/CoreSolutions.jsx";
+import Hero from "@/components/sections/Hero.jsx";
 
 export default function Home() {
   return (
