@@ -124,7 +124,6 @@ export default function IntegrationOrbit({
 
             </div>
 
-
             {/* MOBILE / TABLET */}
             <div className="mx-auto grid max-w-2xl grid-cols-2 gap-6 px-4 md:hidden">
                 {integrations.map((integration, index) => {
