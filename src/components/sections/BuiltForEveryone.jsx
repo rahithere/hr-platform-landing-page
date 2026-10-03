@@ -7,8 +7,8 @@ import LegalTeamsVisual from "../ui/bento-r1-c3.jsx";
 
 export default function BuiltForEveryone() {
     return (
-        <section className="px-4 py-16 md:px-8 md:py-24">
-            <div className="mx-auto max-w-6xl">
+        <section className="px-4 py-16 md:px-8 md:py-24 bg-[#f5f6f7]">
+            <div className="mx-auto max-w-5xl">
 
                 {/* Section heading */}
                 <div className="mx-auto max-w-2xl text-center">
@@ -23,6 +23,8 @@ export default function BuiltForEveryone() {
                 </div>
 
                 {/* Bento */}
+
+                {/* //todo: this grid item need to animated X static image */}
                 <BentoGrid className="mt-12">
                     <BentoGridItem
                         title="For HR professionals"

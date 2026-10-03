@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar.jsx";
 import BuiltForEveryone from "@/components/sections/BuiltForEveryone";
 import CoreSolutions from "@/components/sections/CoreSolutions.jsx";
 import Hero from "@/components/sections/Hero.jsx";
+import Integration from "@/components/sections/Integration.jsx";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <CoreSolutions />
         <BuiltForEveryone />
+        <Integration />
       </main>
     </>
   );
