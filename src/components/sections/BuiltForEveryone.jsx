@@ -3,6 +3,7 @@ import InsightsVisual from "../ui/bento-r1-c2.jsx"
 import EmployeeDataVisual from "../ui/bento-r2-c1.jsx";
 import Image from "next/image";
 import TeamsVisual from "../ui/bento-r2-c2.jsx";
+import LegalTeamsVisual from "../ui/bento-r1-c3.jsx";
 
 export default function BuiltForEveryone() {
     return (
@@ -47,6 +48,7 @@ export default function BuiltForEveryone() {
                     <BentoGridItem
                         title="For legal teams"
                         description="Keep compliance and employee information organized."
+                        header={<LegalTeamsVisual />}
                     />
 
                     <BentoGridItem
