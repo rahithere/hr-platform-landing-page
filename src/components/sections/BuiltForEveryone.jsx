@@ -2,6 +2,7 @@ import { BentoGrid, BentoGridItem, } from "../ui/bento-grid";
 import InsightsVisual from "../ui/bento-r1-c2.jsx"
 import EmployeeDataVisual from "../ui/bento-r2-c1.jsx";
 import Image from "next/image";
+import TeamsVisual from "../ui/bento-r2-c2.jsx";
 
 export default function BuiltForEveryone() {
     return (
@@ -58,6 +59,7 @@ export default function BuiltForEveryone() {
                     <BentoGridItem
                         title="For teams & employees"
                         description="Keep everyone aligned and informed."
+                        header={<TeamsVisual />}
                     />
                 </BentoGrid>
             </div>

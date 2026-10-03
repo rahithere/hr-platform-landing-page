@@ -13,7 +13,7 @@ export default function EmployeeDataVisual() {
                 initial={{ x: 0 }}
                 whileInView={{ x: 300 }}
                 viewport={{
-                    once: true,
+                    once: false,
                     amount: 0.5,
                 }}
                 transition={{
@@ -29,13 +29,13 @@ export default function EmployeeDataVisual() {
                 />
             </motion.div>
 
-            {/* Training */}
+            {/* image 2 */}
             <motion.div
                 className="absolute right-[-5%] top-6 h-40 w-[55%]"
                 initial={{ x: 0 }}
                 whileInView={{ x: -350 }}
                 viewport={{
-                    once: true,
+                    once: false,
                     amount: 0.5,
                 }}
                 transition={{
