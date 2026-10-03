@@ -1,4 +1,5 @@
 import Navbar from "./component/layout/Navbar";
+import CoreSolutions from "./component/sections/CoreSolutions";
 import Hero from "./component/sections/Hero";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <CoreSolutions />
       </main>
     </>
   );
