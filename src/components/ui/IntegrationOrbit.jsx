@@ -4,34 +4,34 @@ import { motion } from "framer-motion";
 
 const integrations = [
     {
-        name: "React",
-        description: "Build modern interactive interfaces",
-        icon: "devicon-react-original colored",
+        name: "Meet",
+        description: "Connect with your team through video meetings",
+        icon: "/integration-icons/googlemeet.png",
     },
     {
-        name: "Figma",
-        description: "Design and collaborate visually",
-        icon: "devicon-figma-plain colored",
+        name: "Loom",
+        description: "Record and share quick video messages",
+        icon: "/integration-icons/loom.png",
     },
     {
-        name: "Docker",
-        description: "Build, ship and run applications",
-        icon: "devicon-docker-plain colored",
+        name: "Outlook",
+        description: "Manage your emails and calendar in one place",
+        icon: "/integration-icons/outlook.png",
     },
     {
-        name: "Node.js",
-        description: "Fast backend development",
-        icon: "devicon-nodejs-plain colored",
+        name: "Teams",
+        description: "Collaborate and communicate with your team",
+        icon: "/integration-icons/teams.png",
     },
     {
-        name: "MongoDB",
-        description: "Flexible application database",
-        icon: "devicon-mongodb-plain colored",
+        name: "Gmail",
+        description: "Manage your email communication seamlessly",
+        icon: "/integration-icons/gmail.png",
     },
     {
-        name: "AWS",
-        description: "Cloud infrastructure and deployment",
-        icon: "devicon-amazonwebservices-plain colored",
+        name: "Sheets",
+        description: "Organize and manage your HR data with spreadsheets",
+        icon: "/integration-icons/sheets.png",
     },
 ];
 
@@ -85,7 +85,7 @@ export default function IntegrationOrbit({
                                 onMouseEnter={() => setActiveIndex(index)}
                             >
                                 <div className="flex h-full w-full items-center justify-center rounded-2xl bg-[#f5f6f8] shadow-sm transition-shadow duration-300 hover:shadow-md">
-                                    <i className={`${integration.icon} text-6xl`} />
+                                    <img src={integration.icon} alt={integration.name} className="h-16 w-16 object-contain" />
                                 </div>
                             </motion.div>
                         ))}
@@ -161,20 +161,12 @@ export default function IntegrationOrbit({
                         >
                             <div
                                 className={`
-                        flex h-[190px] w-full flex-col
-                        items-center justify-between
-                        rounded-2xl
-                        bg-[#f5f6f8]
-                        p-5
-                        text-center
-                        shadow-sm
-                        transition-shadow duration-300
-                        ${isActive ? "shadow-md" : ""}
-                    `}
+                        className="flex h-[250px] w-full flex-col items-center justify-between rounded-2xl bg-[#f5f6f8] p-5 text-center shadow-sm transition-shadow duration-300"
+                        ${isActive ? "shadow-md" : ""}`}
                             >
                                 {/* Icon */}
                                 <div className="flex flex-1 items-center justify-center">
-                                    <i className={`${integration.icon} text-5xl`} />
+                                    <img src={integration.icon} alt={integration.name} className="h-16 w-16 object-contain" />
                                 </div>
 
                                 {/* Details */}

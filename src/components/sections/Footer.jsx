@@ -6,10 +6,10 @@ export default function Footer() {
     return (
         <section className="bg-[#f5f6f7] px-4 pb-6 pt-16 md:px-8 md:pb-8 md:pt-24"> {/*section animation*/}
             <motion.div
-                initial={{ opacity: 0, y: 100, scale: 0.8 }}
+                initial={{ opacity: 0, y: 60, scale: 0.96 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.9, ease: easeInOut }}
+                viewport={{ once: true, amount: 0.05 }}
+                transition={{ duration: 0.8, ease: easeInOut }}
                 className="mx-auto max-w-6xl overflow-hidden rounded-[28px] border border-black/10 bg-white"
             >
                 <div className="px-8 pb-0 pt-12 md:px-12 md:pt-16">
@@ -76,23 +76,23 @@ export default function Footer() {
                 </div>
 
                 {/* Huge CoreShift text - bottom */}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true, amount: 0.3 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="relative mt-10 h-[180px] overflow-hidden md:mt-14 md:h-[250px]"
-                >
+                <div className="relative mt-10 h-[180px] overflow-hidden md:mt-14 md:h-[250px]">
+                    {/* Mobile - static */}
+                    <h2 className="absolute bottom-0 left-1/2 -translate-x-1/2 whitespace-nowrap font-heading text-[18vw] font-semibold leading-none tracking-[-0.06em] text-[#ff674f] md:hidden">
+                        CoreShift
+                    </h2>
+
+                    {/* Desktop - animated */}
                     <motion.h2
                         initial={{ y: 200, opacity: 0, filter: "blur(30px)" }}
                         whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
                         viewport={{ once: true }}
                         transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
-                        className="absolute bottom-0 left-1/2 -translate-x-1/2 whitespace-nowrap font-heading text-[24vw] font-semibold leading-none tracking-[-0.06em] text-[#ff674f] md:text-[220px]"
+                        className="absolute bottom-0 left-1/2 hidden -translate-x-1/2 whitespace-nowrap font-heading text-[24vw] font-semibold leading-none tracking-[-0.06em] text-[#ff674f] md:block md:text-[220px]"
                     >
                         CoreShift
                     </motion.h2>
-                </motion.div>
+                </div>
             </motion.div>
         </section>
     );

@@ -13,11 +13,11 @@ export default function BuiltForEveryone() {
     const heading = "Built for everyone";
     return (
         <motion.section
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{
-                duration: 0.7,
+                duration: 0.8,
                 ease: "easeOut",
             }}
             className="bg-[#f5f6f7] px-4 py-16 md:px-8 md:py-24">
