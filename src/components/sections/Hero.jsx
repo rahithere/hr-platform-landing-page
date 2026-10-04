@@ -1,7 +1,11 @@
+'use client'
+
 import Image from "next/image";
 import CtaButton from "../ui/ctaButton";
+import { motion } from "framer-motion";
 
 export default function Hero() {
+    const heading = "All-in-one HR platform";
     return (
         <section className="relative bg-white pt-30">
             {/* Hero visual area */}
@@ -66,7 +70,7 @@ export default function Hero() {
                 <div className="absolute left-[9%] top-34 z-10">
                     <div className="h-16 w-16 overflow-hidden rounded-2xl border border-black/10 shadow-sm">
                         <Image
-                            src="/hero/person-left.png"
+                            src="/hero/person-left.jpg"
                             alt=""
                             width={64}
                             height={64}
@@ -216,7 +220,7 @@ export default function Hero() {
                 <div className="absolute right-[21%] top-58 z-10">
                     <div className="h-12 w-12 overflow-hidden rounded-xl border border-black/10 shadow-sm">
                         <Image
-                            src="/hero/person-right.png"
+                            src="/hero/person-right.jpg"
                             alt=""
                             width={48}
                             height={48}
@@ -228,15 +232,29 @@ export default function Hero() {
                 {/* Hero content */}
                 <div className="absolute inset-x-0 top-[280px] z-30 flex flex-col items-center text-center md:top-auto md:bottom-0">
                     <h1 className="max-w-2xl font-heading text-[48px] font-semibold leading-[1.05] tracking-[-0.04em] md:text-[64px]">
-                        All-in-one HR
-                        <br />
-                        platform
+                        {heading.split(" ").map((word, index) => (
+                            <motion.span
+                                key={word}
+                                initial={{ opacity: 0, filter: "blur(8px)", y: 8 }}
+                                whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+                                viewport={{ once: true, amount: 0.8 }}
+                                transition={{ duration: 0.35, delay: index * 0.08, ease: "easeOut" }}
+                                className="mr-[0.25em] inline-block"
+                            >
+                                {word}
+                            </motion.span>
+                        ))}
                     </h1>
 
-                    <p className="mt-6 max-w-md font-body text-base leading-6 text-black/50">
+                    <motion.p
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        transition={{ duration: 0.5, ease: "easeInOut" }}
+                        className="mt-6 max-w-md font-body text-base leading-6 text-black/50">
                         CoreShift is a modern, all-in-one HR platform
                         designed to perfectly fit your business needs.
-                    </p>
+                    </motion.p>
 
                     <CtaButton
                         variant="hero"
