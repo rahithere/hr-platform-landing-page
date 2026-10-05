@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+// import { gsap } from "gsap";
+// import { useRef, useEffect } from "react";
 
 const integrations = [
     {
@@ -40,6 +42,40 @@ export default function IntegrationOrbit({
     activeIndex,
     setActiveIndex,
 }) {
+
+    // const trackRef = useRef(null);
+    // useEffect(() => {
+    //     if (!isInView) return;
+
+    //     const track = trackRef.current;
+
+    //     const cards = gsap.utils.toArray(".integration-card");
+
+    //     const cardWidth = cards[0].offsetWidth + 24;
+
+    //     const ctx = gsap.context(() => {
+    //         gsap.to(track, {
+    //             x: `-=${cardWidth}`,
+    //             duration: 1,
+    //             ease: "power1.inOut",
+    //             repeat: -1,
+    //             repeatDelay: 0.8,
+    //             modifiers: {
+    //                 x: gsap.utils.unitize((value) => {
+    //                     const x = parseFloat(value);
+
+    //                     if (x <= -cardWidth * integrations.length) {
+    //                         return 0;
+    //                     }
+
+    //                     return x;
+    //                 }),
+    //             },
+    //         });
+    //     }, track);
+
+    //     return () => ctx.revert();
+    // }, [isInView]);
     return (
         <div className="mt-14 w-full">
 
@@ -47,20 +83,10 @@ export default function IntegrationOrbit({
             <div className="hidden md:block">
 
                 {/* Orbit area */}
-                <motion.div
-                    className="relative mx-auto mt-14 h-[230px] max-w-5xl"
-                    initial={{ opacity: 0 }}
-                    animate={{
-                        opacity: isInView ? 1 : 0,
-                    }}
-                    transition={{
-                        duration: 0.8,
-                        ease: "easeOut",
-                    }}
-                >
+                <motion.div className="relative mx-auto mt-14 h-[230px] max-w-5xl">
 
                     {/* Cards */}
-                    <div className="relative flex items-start justify-center gap-6">
+                    <div className=" relative flex items-start justify-center gap-6">
                         {integrations.map((integration, index) => (
                             <motion.div
                                 key={integration.name}
