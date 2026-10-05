@@ -4,7 +4,7 @@ export default function TestimonialCard({ testimonial }) {
     return (
         <div className="w-full max-w-xl rounded-3xl bg-white p-8 shadow-sm">
             <div className="flex items-center gap-4">
-                <div className="relative h-12 w-12 overflow-hidden rounded-full bg-[#f5f6f7]">
+                <div className="relative h-12 w-12 overflow-hidden rounded-full bg-slate-50">
                     <img src={testimonial.image} alt={testimonial.name} className="h-full w-full object-cover" />
                 </div>
 

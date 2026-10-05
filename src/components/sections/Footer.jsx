@@ -10,7 +10,7 @@ export default function Footer() {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true, amount: 0.05 }}
                 transition={{ duration: 0.8, ease: easeInOut }}
-                className="mx-auto max-w-6xl overflow-hidden rounded-[28px] border border-black/10 bg-white"
+                className="mx-auto max-w-5xl overflow-hidden rounded-[28px] border border-black/10 bg-slate-50"
             >
                 <div className="px-8 pb-0 pt-12 md:px-12 md:pt-16">
                     <div className="grid grid-cols-2 gap-10 md:grid-cols-6 md:gap-8">

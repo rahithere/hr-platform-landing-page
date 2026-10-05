@@ -29,7 +29,7 @@ export default function Integration() {
     }, []);
 
     return (
-        <section className="bg-[#f5f6f7] px-4 py-20 md:px-8">
+        <section className="bg-[#f5f6f7] px-4 py-24 md:px-8">
             <motion.div
                 ref={sectionRef}
                 initial={{
@@ -46,7 +46,8 @@ export default function Integration() {
                     duration: 0.4,
                     ease: "easeOut",
                 }}
-                className="mx-auto max-w-6xl overflow-hidden rounded-[28px] border border-black/10 bg-white px-6 py-16 md:px-12 md:py-20">
+                className="mx-auto max-w-5xl overflow-hidden rounded-[28px] border border-black/10 bg-slate-50 px-6 py-16 md:px-12 md:py-20">
+
                 <IntegrationHeader isInView={isInView} />
 
                 <IntegrationOrbit

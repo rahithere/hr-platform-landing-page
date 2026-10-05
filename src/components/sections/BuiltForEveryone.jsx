@@ -20,7 +20,7 @@ export default function BuiltForEveryone() {
                 duration: 0.8,
                 ease: "easeOut",
             }}
-            className="bg-[#f5f6f7] px-4 py-16 md:px-8 md:py-24">
+            className="bg-[#f5f6f7]  px-4 py-20 md:px-8 md:py-24">
             <div className="mx-auto max-w-5xl">
 
                 {/* Section heading */}

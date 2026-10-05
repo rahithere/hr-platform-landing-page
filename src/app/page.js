@@ -14,8 +14,10 @@ export default function Home() {
         <Hero />
         <CoreSolutions />
         <BuiltForEveryone />
+        <div id="spacer" className="w-full h-[80px] bg-[#F5F6F7]"></div>
         <Integration />
         <Testimonials />
+        <div id="spacer" className="w-full h-[100px] bg-[#F5F6F7]"></div>
         <Footer />
       </main>
     </>

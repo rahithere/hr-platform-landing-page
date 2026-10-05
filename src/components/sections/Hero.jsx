@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function Hero() {
     const heading = "All-in-one HR platform";
     return (
-        <section className="relative bg-white pt-30">
+        <section className="relative bg-[#f5f6f7] pt-30 pb-30">
             {/* Hero visual area */}
             <div className="relative mx-auto h-[500] w-full max-w-6xl">
 

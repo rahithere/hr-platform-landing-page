@@ -15,9 +15,9 @@ export default function CoreSolutions() {
                 duration: 0.7,
                 ease: "easeOut",
             }}
-            className="px-4 py-16 md:px-8 md:py-24"
+            className="px-4  bg-gray-200 pt-30 pb-30"
         >
-            <div className="relative mx-auto h-[640px] max-w-9xl overflow-hidden rounded-[24px] bg-[#f5f6f7]">
+            <div className="relative mx-auto h-[640px] max-w-5xl overflow-hidden rounded-[24px] bg-[#f5f6f7]">
 
                 {/* LEFT ORBIT */}
                 {/* todo */}

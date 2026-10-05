@@ -2,7 +2,7 @@ import CtaButton from "../ui/ctaButton";
 
 export default function Navbar() {
     return (
-        <header className="fixed top-6 left-1/2 z-50 w-[calc(100%-32px)] max-w-4xl -translate-x-1/2">
+        <header className="fixed top-6 left-1/2 z-50 w-[calc(100%-32px)] max-w-5xl -translate-x-1/2">
             <nav className="flex h-12 items-center justify-between rounded-xl border border-black/10 bg-white px-2 shadow-sm">
 
                 {/* Logo */}
@@ -50,7 +50,7 @@ export default function Navbar() {
                         Sign in
                     </CtaButton>
 
-                    <CtaButton variant="primary" size="sm" href="#demo">
+                    <CtaButton variant="hero" size="sm" href="#demo">
                         Request a Demo
                     </CtaButton>
                 </div>

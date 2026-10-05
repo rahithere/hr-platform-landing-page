@@ -7,7 +7,7 @@ export default function TestButton({ direction, onClick, disabled = false }) {
             onClick={onClick}
             disabled={disabled}
             aria-label={direction === "left" ? "Previous" : "Next"}
-            className="flex h-12 w-12 items-center justify-center rounded-full border border-black/10 bg-white text-black shadow-sm transition-all duration-300 hover:bg-[#9B68FF] hover:text-white disabled:pointer-events-none disabled:opacity-40"
+            className="flex h-12 w-12 items-center justify-center rounded-full border border-black/10 bg-slate-50 text-black shadow-sm transition-all duration-300 hover:bg-[#9B68FF] hover:text-slate-50 disabled:pointer-events-none disabled:opacity-40"
         >
             <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5">
                 {direction === "left" ? (
