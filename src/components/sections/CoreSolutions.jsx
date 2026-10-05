@@ -113,7 +113,7 @@ export default function CoreSolutions() {
 
                         {/* CTA */}
                         <CtaButton
-                            variant="purple"
+                            variant="outlinePurple"
                             size="md"
                             href="#"
                             className="mt-6"

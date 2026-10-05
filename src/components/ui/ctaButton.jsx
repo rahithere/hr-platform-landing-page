@@ -11,6 +11,7 @@ export default function CtaButton({
         secondary: "bg-white text-black border border-black/10 hover:bg-black/5",
         hero: "bg-[#FF6548] text-white hover:scale-[1.02]",
         purple: "bg-[#9B68FF] text-white hover:scale-[1.02]",
+        outlinePurple: "bg-transparent text-[#9B68FF] border border-[#9B68FF]/40 hover:bg-[#9B68FF]/10 hover:border-[#9B68FF]",
     };
 
     const sizes = {

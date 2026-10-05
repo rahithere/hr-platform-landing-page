@@ -12,59 +12,61 @@ export default function Hero() {
             <div className="relative mx-auto h-[500] w-full max-w-6xl">
 
                 {/* Connector background */}
-                {/* <svg
-                    className="pointer-events-none absolute inset-0 h-full w-full"
-                    viewBox="0 0 1200 520"
-                    fill="none"
-                    preserveAspectRatio="xMidYMid meet"
-                    aria-hidden="true"
-                > */}
-                {/* Main horizontal line */}
-                {/* <path
-                        d="M180 175H1020"
-                        stroke="currentColor"
-                        strokeOpacity="0.12"
-                        strokeWidth="1"
-                    /> */}
+                <div className="pointer-events-none absolute inset-x-0 top-0 hidden lg:block">
+                    <svg
+                        className="mx-auto h-full w-full max-w-[1200px]"
+                        viewBox="0 0 1200 520"
+                        fill="none"
+                        preserveAspectRatio="xMidYMid meet"
+                        aria-hidden="true"
+                    >
+                        {/* Main horizontal line */}
+                        <path
+                            d="M180 175H1020"
+                            stroke="currentColor"
+                            strokeOpacity="0.12"
+                            strokeWidth="1"
+                        />
 
-                {/* Left upper connector */}
-                {/* <path
-                        d="M300 90H350L400 175"
-                        stroke="currentColor"
-                        strokeOpacity="0.12"
-                        strokeWidth="1"
-                    /> */}
+                        {/* Left upper connector */}
+                        <path
+                            d="M300 90H350L400 175"
+                            stroke="currentColor"
+                            strokeOpacity="0.12"
+                            strokeWidth="1"
+                        />
 
-                {/* Left lower connector */}
-                {/* <path
-                        d="M300 265H350L400 175"
-                        stroke="currentColor"
-                        strokeOpacity="0.12"
-                        strokeWidth="1"
-                    /> */}
+                        {/* Left lower connector */}
+                        <path
+                            d="M300 265H350L400 175"
+                            stroke="currentColor"
+                            strokeOpacity="0.12"
+                            strokeWidth="1"
+                        />
 
-                {/* Right upper connector */}
-                {/* <path
-                        d="M900 90H850L800 175"
-                        stroke="currentColor"
-                        strokeOpacity="0.12"
-                        strokeWidth="1"
-                    /> */}
+                        {/* Right upper connector */}
+                        <path
+                            d="M900 90H850L800 175"
+                            stroke="currentColor"
+                            strokeOpacity="0.12"
+                            strokeWidth="1"
+                        />
 
-                {/* Right lower connector */}
-                {/* <path
-                        d="M900 265H850L800 175"
-                        stroke="currentColor"
-                        strokeOpacity="0.12"
-                        strokeWidth="1"
-                    /> */}
+                        {/* Right lower connector */}
+                        <path
+                            d="M900 265H850L800 175"
+                            stroke="currentColor"
+                            strokeOpacity="0.12"
+                            strokeWidth="1"
+                        />
 
-                {/* Nodes */}
-                {/* <circle cx="350" cy="90" r="3" fill="#8B5CF6" />
-                    <circle cx="350" cy="265" r="3" fill="#8B5CF6" />
-                    <circle cx="850" cy="90" r="3" fill="#8B5CF6" />
-                    <circle cx="850" cy="265" r="3" fill="#8B5CF6" />
-                </svg> */}
+                        {/* Nodes */}
+                        <circle cx="350" cy="90" r="3" fill="#8B5CF6" />
+                        <circle cx="350" cy="265" r="3" fill="#8B5CF6" />
+                        <circle cx="850" cy="90" r="3" fill="#8B5CF6" />
+                        <circle cx="850" cy="265" r="3" fill="#8B5CF6" />
+                    </svg>
+                </div>
 
                 {/* Left person */}
                 <div className="absolute left-[9%] top-34 z-10">
